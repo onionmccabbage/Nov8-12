@@ -1,0 +1,122 @@
+Toby Dussek
+
+> get the VMs working
+> attendance
+> assets 
+> overview of course
+
+ 9:30 start
+11:00 break
+12:30 lunch
+ 3:00 break
+ 4:30 end
+
+Who
+bit about
+experience - web and other
+what you want
+
+> meet the four data bindings
+  {{}} one way INTO view (for interpolation)
+  []   one way INTO view (for attributes)
+  ()   one way OUT OF the view (events)
+  [()] two way, for forms (using FormsModule and ngModel)
+- do a bit more about css
+
+Structural Directives
+> *ngIf
+> *ngFor
+Also
+> @Input()
+> @Output()
+
+> in console you can filter out msg that just get in the way
+
+Until 2:30 (maybe beyond): also questions (also read documentation)
+> lab 5d for custom directives (p34)
+> lab 6b for Angular Observables (p43) - mostly examine existing code
+then choose between:
+> lab 6a parts 3 and 4 (p41ff) exploring other RxJS operators (observables)
+> lab 5c (p30) for testing input and output
+> more work on the Hackathon 1
+
+Question: when to use which sort of quotes...
+single quotes ' either will do for JS and for HTML and for CSS
+double quotes "
+back ticks    ` - used by modern JavaScript for string interpolation
+
+
+end of day - template forms
+Weds -  conclude forms, then services
+
+get Augury - now 'Angular Dev Tools'
+
+4a p17 finish this yourselves
+
+Tuesday
+> morning directives
+- afternoon hacky stuff
+> observables
+
+Wednesday
+> submitting SPA forms
+> reactive forms
+> after lunch (also see pp255ff) until 3:00 tea break
+  > complete quicklab 8: FormGroup, nesting FormControls
+  > also 9a: Validating Form Controls (similar to the last one we did)
+  > and 9b: unit testing forms and custom validator directive
+> we also need to test services - lab 10...
+> services (which are Observables)
+
+Thursday
+- complete services
+- routing
+  - ng generate component home
+  - then add a route for 'home'
+> data sanity - preventing injection attacks etc.
+  - you should validate and sanitize ALL user entered values in a form
+  - you should validate and sanitize ALL user entered values on the serve too
+
+- work on the Hackathons...
+  - make the three views routed (in router module)
+  - make the nav into actual routerLinks
+  - remove the static components from app.component.html
+  - and use a <router-outlet> instead
+  - then... (you will need npx json-server --watch ./src/assets/qacinemas.json )
+    - build a service to consume the qacinemas.json
+    - choose when to call this service 
+    - when the service loads the data, populate relevant models (classes?)
+    - use these models and *ngFor to iterate and show the tables
+
+Friday
+> pipes p388 (lab p95)
+> routing guards p366 (lab p90)
+- loose ends about testing
+> maybe get set methods in classes
+- building for production and deployment
+  > ng serve runs in dev mode
+  > debug is a bit stricter
+  > prod mode is very strict
+  - ng serve, ng build etc
+  - web pack and zone.js
+  - targets, pollyfills...
+  > deployment - copy from dist to your server (e.g. htdocs)
+  - automated tool chains: jenkins etc.
+
+- see preso on Ivy: https://www.youtube.com/watch?v=dIxknqPOWms&t=1359s
+- all afternoon on labs and hackathon stuff (and optional project)
+1:30-2:30
+2:30 - how are we doing?
+.......
+  - complete the services - consider using get/set in your data model classes
+  - validation of 'sign-up' form
+  - only enable the button if  the form is valid
+  - maybe explore making theform either template-driven or reactive
+  - add users via the form and a service
+- and/or explore the missing test labs (read docs then try unit tests)
+- course feedback
+- don't forget to retreive assets from VMs
+
+https://github.com/onionmccabbage/Nov8-12
+
+
